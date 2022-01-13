@@ -6,7 +6,7 @@
         <hr>
         <div class="row">
             <div class="col-xs-12 col-sm-6">
-                <app-user-detail v-bind:name="name"></app-user-detail>
+                <app-user-detail v-bind:name="name" @nameWasReset="name = $event"></app-user-detail>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <app-user-edit></app-user-edit>
@@ -39,7 +39,7 @@
 </script>
 
 <style>
-    div {
+    .component {
         background-color: lightblue;
     }
 </style>
